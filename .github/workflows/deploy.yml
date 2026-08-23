@@ -1,0 +1,89 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Allows a manual run from the Actions tab.
+  workflow_dispatch:
+
+# Grant the token exactly what deploy-pages needs, nothing more.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; let a newer push finish rather than cancelling it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify the site is intact
+        run: |
+          set -euo pipefail
+
+          # Every file the pages reference must exist, or the deploy ships a 404.
+          for f in index.html fr/index.html styles.css CNAME robots.txt \
+                   sitemap.xml llms.txt site.webmanifest og.png favicon.ico \
+                   favicon-16x16.png favicon-32x32.png favicon-48x48.png \
+                   apple-touch-icon.png android-chrome-192x192.png \
+                   android-chrome-512x512.png \
+                   fonts/great-vibes-latin.woff2 fonts/great-vibes-latin-ext.woff2 \
+                   fonts/headland-one-latin.woff2 fonts/headland-one-latin-ext.woff2; do
+            [ -f "$f" ] || { echo "::error::missing file: $f"; exit 1; }
+          done
+
+          # A broken JSON-LD block silently costs every rich result on the page.
+          python3 - <<'PY'
+          import json, re, sys, pathlib
+          ok = True
+          for f in ('index.html', 'fr/index.html'):
+              html = pathlib.Path(f).read_text()
+              m = re.search(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
+              if not m:
+                  print(f'::error file={f}::no JSON-LD block'); ok = False; continue
+              try:
+                  graph = json.loads(m.group(1))['@graph']
+                  print(f'{f}: JSON-LD valid, {len(graph)} nodes')
+              except Exception as e:
+                  print(f'::error file={f}::invalid JSON-LD: {e}'); ok = False
+          for f in ('site.webmanifest',):
+              try:
+                  json.loads(pathlib.Path(f).read_text()); print(f'{f}: valid JSON')
+              except Exception as e:
+                  print(f'::error file={f}::invalid JSON: {e}'); ok = False
+          sys.exit(0 if ok else 1)
+          PY
+
+          python3 -c "import xml.dom.minidom as m; m.parse('sitemap.xml'); print('sitemap.xml: well-formed')"
+
+          # The CNAME decides the live domain — a typo here takes the site offline.
+          test "$(tr -d '[:space:]' < CNAME)" = "wibeset.ca" \
+            || { echo "::error::CNAME is not wibeset.ca"; exit 1; }
+          echo "CNAME: wibeset.ca"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # The repo root *is* the site — no build step, nothing to compile.
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
