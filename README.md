@@ -2,153 +2,89 @@
   <img src="og.png" alt="We are Wibeset — a small studio in Saguenay, Québec, that builds web and mobile products" width="100%" />
 </p>
 
-<h1 align="center">wibeset.ca</h1>
+<h1 align="center">Wibeset</h1>
 
 <p align="center">
-  The presentation site for <strong>Wibeset</strong> — a small studio in Saguenay,
-  Québec, that builds web and mobile products.
+  <strong>The calm, fast, private kind.</strong><br />
+  A small studio in Saguenay, Québec, that builds web and mobile products.
 </p>
 
 <p align="center">
-  <a href="https://wibeset.ca"><strong>wibeset.ca</strong></a> ·
-  <a href="https://wibeset.ca/fr/">Version française</a>
+  <a href="https://wibeset.ca"><strong>wibeset.ca →</strong></a>
 </p>
 
 <p align="center">
-  <em>Static HTML · No build step · No JavaScript · GitHub Pages</em>
+  <em>Saguenay, Québec · English &amp; French · We ship our own products</em>
 </p>
 
 ---
 
-One page, in English and French. No framework, no bundler, no dependencies —
-two HTML files, one stylesheet, four fonts. The repo root *is* the site.
+We build small software that does one thing well, then gets out of the way. No
+bloat, no dashboards nobody reads, nothing to configure before it's useful.
 
-## Run it locally
+Everything here is ours — designed, built and shipped in-house.
 
-The pages use root-relative paths (`/favicon.ico`, `/site.webmanifest`), so
-opening `index.html` straight off the disk loses the icons and the manifest.
-Serve it instead:
+## Products
 
-```bash
-python3 -m http.server 8000
-```
+### Puuunch
 
-Then open <http://localhost:8000/> and <http://localhost:8000/fr/>.
+**A fast, beautiful timesheet for freelancers and small teams.** Log time,
+review the week, and send it for approval — without the accounting-software
+feel.
 
-## Structure
+*Coming soon.*
 
-```
-index.html              English page
-fr/index.html           French page — a full twin, not a stub
-styles.css              The whole stylesheet
-fonts/                  Self-hosted woff2 (latin + latin-ext subsets)
-llms.txt                Structured brief written for LLMs
-robots.txt              Allows all crawlers, names the AI ones explicitly
-sitemap.xml             Both URLs
-site.webmanifest        PWA manifest
-CNAME                   wibeset.ca
-og.png                  1200×630 social card
-favicon.ico, favicon-*.png, apple-touch-icon.png, android-chrome-*.png
-.github/workflows/      Pages deployment
-```
+### Noue
 
-## Design
+**A collaborative memory for small teams. Not a CRM.** One principle: one
+interaction, one note. A person is a name and a timeline. Built for the small
+businesses, agencies and consultants who find HubSpot and Salesforce far too
+complex.
 
-Same look and feel as [dominicmartineau.com](https://dominicmartineau.com):
-near-black background with one cool bloom top-left, **Headland One** for the
-section headings, generous padding that steps up at 810px and 1100px.
+*Coming soon.*
 
-The wordmark is **Great Vibes**, and it needs three corrections that are easy to
-lose in a refactor:
+### The Chirp League
 
-- **`font-size: min(calc((100vw - <pad>) / 3.05), 290px)`** — the divisor is
-  calibrated to the glyph run, not guessed. It fills the text column at every
-  breakpoint (the `<pad>` matches the `article` padding of that breakpoint) and
-  caps at 290px so it stops growing on wide screens.
-- **`padding-left: 0.02em`** — the W's opening swash starts 0.0172em *left* of
-  the line origin. Without the pad it hangs outside the text column and reads as
-  clipped.
-- **`margin-top: 0.15em`** — that same swash climbs above the cap line. Any
-  tighter and it crosses the "We are" label above it.
+**Fantasy hockey pools with built-in trash talk.** Draft real NHL players, track
+live standings, and chirp your rivals — all in one place.
 
-Links carry no colour; they are marked by a faint underline that goes solid
-white on hover. Project names never wrap (`white-space: nowrap`), and the
-projects table stacks to one column below 600px.
+*Coming soon.*
 
-Fonts are self-hosted rather than pulled from Google Fonts — no third-party
-request, no render dependency, no privacy question.
+### Luere
 
-## Answer-engine notes
+**Smaller files. Same good looks.** Shrink, convert, crop and resize your images
+with a live before/after preview, so you decide exactly how much quality to
+trade for size. Seven formats, batch export, and a proper crop studio.
 
-The site is built to be quoted accurately by AI assistants, not just crawled.
-Three details carry most of that, and all three are easy to undo by accident:
+Free, native macOS app. Everything runs on your Mac — nothing is ever uploaded.
 
-- **The opening sentence is self-contained** — "Wibeset is a small studio in
-  Saguenay, Québec, that builds web and mobile products." An extractor needs the
-  `<entity> is a <category> that <does X>` pattern to attribute a claim. Reword
-  it so the subject lives in the heading instead, and the sentence becomes an
-  unattributable fragment.
-- **The JSON-LD `@graph` shares one `@id`** across both languages
-  (`https://wibeset.ca/#organization`). Give the pages separate ids and they
-  describe two organizations rather than one.
-- **Unreleased products carry no `offers`** and say "Not released yet" in their
-  description — otherwise an assistant will happily announce a product that
-  doesn't exist yet.
+[luere.app →](https://luere.app)
 
-`llms.txt` holds the long-form facts (platform, price, status, macOS versions)
-that would clutter the page. Keep it in sync when a product ships.
+### Luere Icon Studio
 
-See `AEO.md` (untracked, local only) for the full audit and what is still open.
+**One logo. Every icon.** Drop in a single image and get every icon and favicon
+size you need — web, macOS, iOS and Windows — written to a tidy folder next to
+your source.
 
-## Deploying
+Free, native macOS app. Everything runs on your Mac.
 
-Push to `main`. `.github/workflows/deploy.yml` verifies the site, then publishes
-it to GitHub Pages.
+[luere.app/icon-studio →](https://luere.app/icon-studio/)
 
-The verify step exists because a static site fails quietly: it checks that every
-referenced asset is present, that the JSON-LD in both pages parses, that the
-manifest and sitemap are well-formed, and that `CNAME` still reads `wibeset.ca`.
-A typo in any of those costs the icons, the rich results, or the domain — with no
-error anywhere.
+## What we care about
 
-You can also trigger a deploy by hand from the **Actions** tab
-(`workflow_dispatch`).
+- **Calm** — software that doesn't demand attention it hasn't earned.
+- **Fast** — if it feels slow, it's broken.
+- **Private** — your data is yours. Our Mac apps never upload anything.
+- **Bilingual** — everything we ship works in English and French.
 
-### DNS
+## Say hello
 
-The apex needs GitHub Pages' four A records, and `www` a CNAME:
-
-| Type | Host | Value |
-|---|---|---|
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| CNAME | `www` | `wibeset.github.io` |
-
-AAAA records (`2606:50c0:8000::153` through `8003::153`) are optional but worth
-adding. Enable **Enforce HTTPS** once the certificate is issued.
-
-## Editing
-
-Adding or changing a project means touching four places, in both languages:
-
-1. the row in the projects `<table>`;
-2. its node in the JSON-LD `@graph`;
-3. its entry in `llms.txt`;
-4. the `<meta name="description">` list.
-
-Bump `dateModified` in the JSON-LD and `lastmod` in `sitemap.xml` while you're
-there.
-
-## Also by the studio
-
-- [Luere](https://luere.app) — Shrink, convert, crop and resize your images
-- [Luere Icon Studio](https://luere.app/icon-studio/) — One logo. Every icon
+Got a question or just want to talk? **[hello@wibeset.ca](mailto:hello@wibeset.ca)**
 
 ---
 
 <p align="center">
-  <sub>Built by <a href="https://dominicmartineau.com">Dominic Martineau</a> in
-  Saguenay, Québec.</sub>
+  <sub><a href="https://wibeset.ca">wibeset.ca</a> ·
+  <a href="https://wibeset.ca/fr/">Version française</a> ·
+  Founded by <a href="https://dominicmartineau.com">Dominic Martineau</a></sub>
 </p>
