@@ -63,6 +63,14 @@ jobs:
 
           python3 -c "import xml.dom.minidom as m; m.parse('sitemap.xml'); print('sitemap.xml: well-formed')"
 
+          # llms.txt is Markdown by contract: validators reject it without an H1
+          # on the first line, and without real [name](url) links to follow.
+          head -n 1 llms.txt | grep -q '^# ' \
+            || { echo "::error file=llms.txt::first line must be a Markdown H1"; exit 1; }
+          grep -qE '\[[^]]+\]\([^)]+\)' llms.txt \
+            || { echo "::error file=llms.txt::no Markdown links found"; exit 1; }
+          echo "llms.txt: H1 and $(grep -coE '\[[^]]+\]\([^)]+\)' llms.txt) linked lines"
+
           # The CNAME decides the live domain — a typo here takes the site offline.
           test "$(tr -d '[:space:]' < CNAME)" = "wibeset.ca" \
             || { echo "::error::CNAME is not wibeset.ca"; exit 1; }

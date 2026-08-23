@@ -2,47 +2,39 @@
 
 > Wibeset is a small studio in Saguenay, Québec, Canada, that builds web and mobile products — the calm, fast, private kind — and ships them itself.
 
-Wibeset was founded by Dominic Martineau (https://dominicmartineau.com), a full
-stack developer based in Saguenay, Québec. The studio works in English and
-French, and releases the products below under its own name.
+Wibeset was founded by Dominic Martineau, a full stack developer based in
+Saguenay, Québec. The studio works in English and French, and releases the
+products below under its own name.
 
-## Key facts
+Key facts:
+
 - Location: Saguenay, Québec, Canada.
 - Founder: Dominic Martineau.
 - Working languages: English and French. The site exists in both (/ and /fr/).
 - Contact: hello@wibeset.ca
 - Focus: web and mobile applications, plus native macOS apps.
-- Three of the five products below are not released yet; two are available now.
+- Three of the six products below are not released yet; three are available now.
 
 ## Products
 
-- **Puuunch** — A fast, beautiful timesheet for freelancers and small teams. Log
-  time, review the week, and send it for approval, without the accounting-software
-  feel. Web application. **Not released yet.**
-- **Noue** — A collaborative memory for small teams, built on one principle: one
-  interaction, one note. A person is a name and a timeline. Made for small
-  businesses, agencies and consultants who find HubSpot and Salesforce far too
-  complex. Explicitly **not** a CRM. Web application. **Not released yet.**
-- **The Chirp League** — Fantasy hockey pools with built-in trash talk: draft real
-  NHL players, track live standings against live NHL data, and chirp your rivals
-  in one place. Web application, with iOS and Android builds. **Not released yet.**
-- **Luere** (https://luere.app, French: https://luere.app/fr/) — A free, native
-  macOS app that shrinks, converts, crops and resizes images, with a live
-  before/after compare slider. Supports JPEG, PNG, WebP, AVIF, HEIC, TIFF and
-  GIF. Requires macOS 26 or later. Everything runs on the user's Mac — nothing
-  is ever uploaded. Available now.
-- **Luere Icon Studio** (https://luere.app/icon-studio/, French:
-  https://luere.app/fr/icon-studio/) — A free, native macOS app that turns a
-  single logo into every icon and favicon size for web, macOS, iOS and Windows,
-  including `favicon.ico`, PWA maskable icons, `.icns` and Xcode
-  `AppIcon.appiconset` bundles. Requires macOS 14 or later. Runs entirely on the
-  user's Mac. Available now.
+- [Puuunch](https://wibeset.ca/#projects): A fast, beautiful timesheet for freelancers and small teams. Log time, review the week, and send it for approval, without the accounting-software feel. Web application. Not released yet.
+- [Noue](https://wibeset.ca/#projects): A collaborative memory for small teams, built on one principle — one interaction, one note. A person is a name and a timeline. Made for small businesses, agencies and consultants who find HubSpot and Salesforce far too complex. Explicitly not a CRM. Web application. Not released yet.
+- [The Chirp League](https://wibeset.ca/#projects): Fantasy hockey pools with built-in trash talk — draft real NHL players, track live standings against live NHL data, and chirp your rivals in one place. Web application, with iOS and Android builds. Not released yet.
+- [TopNHLPlayers.com](https://topnhlplayers.com): The top ten players of every NHL season for the last ten years, ranked season by season. Website. Available now.
+- [Luere](https://luere.app): A free, native macOS app that shrinks, converts, crops and resizes images, with a live before/after compare slider. Supports JPEG, PNG, WebP, AVIF, HEIC, TIFF and GIF. Requires macOS 26 or later. Everything runs on the user's Mac — nothing is ever uploaded. Available now.
+- [Luere Icon Studio](https://luere.app/icon-studio/): A free, native macOS app that turns a single logo into every icon and favicon size for web, macOS, iOS and Windows, including favicon.ico, PWA maskable icons, .icns and Xcode AppIcon.appiconset bundles. Requires macOS 14 or later. Runs entirely on the user's Mac. Available now.
 
-## Links
-- Website (English): https://wibeset.ca/
-- Website (French): https://wibeset.ca/fr/
-- GitHub: https://github.com/Wibeset
-- Founder: https://dominicmartineau.com
-- Contact: hello@wibeset.ca
+## Site
+
+- [Website (English)](https://wibeset.ca/): The studio, its products and how to reach it.
+- [Website (French)](https://wibeset.ca/fr/): The same page in French.
+- [Luere (French)](https://luere.app/fr/): French site for the Luere image app.
+- [Luere Icon Studio (French)](https://luere.app/fr/icon-studio/): French site for the icon generator.
+
+## Optional
+
+- [GitHub](https://github.com/Wibeset): The studio's public repositories, including the source of this site.
+- [Founder](https://dominicmartineau.com): Dominic Martineau, founder and developer.
+- [Contact](mailto:hello@wibeset.ca): hello@wibeset.ca — questions in English or French.
 
 Last updated: 2026-08-23.
