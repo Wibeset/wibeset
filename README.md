@@ -50,6 +50,13 @@ live standings, and chirp your rivals — all in one place.
 
 *Coming soon.*
 
+### Reliure
+
+**Your reading life, bound together.** A quiet reading journal for iPhone: keep
+every book, know where you are, remember what moved you.
+
+*Coming soon.*
+
 ### TopNHLPlayers.com
 
 **Ten seasons. Ten players each.** The top ten players of every NHL season for
