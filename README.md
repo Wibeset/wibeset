@@ -55,7 +55,7 @@ live standings, and chirp your rivals — all in one place.
 **Your reading life, bound together.** A quiet reading journal for iPhone: keep
 every book, know where you are, remember what moved you.
 
-*Coming soon.*
+[reliure.me →](https://reliure.me)
 
 ### TopNHLPlayers.com
 
