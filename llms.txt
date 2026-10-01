@@ -23,7 +23,7 @@ Key facts:
 - [Reliure](https://reliure.me): A quiet reading journal for iPhone — keep every book, know where you are, remember what moved you. iOS app. Available now.
 - [TopNHLPlayers.com](https://topnhlplayers.com): The top ten players of every NHL season for the last ten years, ranked season by season. Website. Available now.
 - [Luere](https://luere.app): A free, native macOS app that shrinks, converts, crops and resizes images, with a live before/after compare slider. Supports JPEG, PNG, WebP, AVIF, HEIC, TIFF and GIF. Requires macOS 26 or later. Everything runs on the user's Mac — nothing is ever uploaded. Available now.
-- [Luere Icon Studio](https://luere.app/icon-studio/): A free, native macOS app that turns a single logo into every icon and favicon size for web, macOS, iOS, Android, Windows and Steam, including favicon.ico, PWA maskable icons, .icns, Xcode AppIcon.appiconset bundles, Android launcher icons and Steamworks icons. Requires macOS 14 or later. Runs entirely on the user's Mac. Available now.
+- [Luere Icon Studio](https://luere.app/icon-studio/): A free, native macOS app that turns a single logo into every icon and favicon size for web, macOS, iOS, Android, Windows, Linux and Steam, including favicon.ico, PWA maskable icons, .icns, Xcode AppIcon.appiconset bundles, Android launcher icons, Steamworks icons, Tauri and Electron icon sets, browser-extension icons, Microsoft Store (MSIX) assets, Expo assets and social avatars. Requires macOS 14 or later. Runs entirely on the user's Mac. Available now.
 
 ## Site
 
