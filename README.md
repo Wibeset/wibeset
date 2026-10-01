@@ -77,7 +77,7 @@ Free, native macOS app. Everything runs on your Mac — nothing is ever uploaded
 ### Luere Icon Studio
 
 **One logo. Every icon.** Drop in a single image and get every icon and favicon
-size you need — web, macOS, iOS and Windows — written to a tidy folder next to
+size you need — web, macOS, iOS, Android, Windows and Steam — written to a tidy folder next to
 your source.
 
 Free, native macOS app. Everything runs on your Mac.
