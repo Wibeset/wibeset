@@ -32,7 +32,7 @@ Everything here is ours — designed, built and shipped in-house.
 review the week, and send it for approval — without the accounting-software
 feel.
 
-*Coming soon.*
+[puuun.ch →](https://puuun.ch/)
 
 ### Noue
 

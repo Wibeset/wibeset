@@ -13,11 +13,11 @@ Key facts:
 - Working languages: English and French. The site exists in both (/ and /fr/).
 - Contact: hello@wibeset.ca
 - Focus: web and mobile applications, plus native macOS apps.
-- Four of the seven products below are not released yet; three are available now.
+- Two of the seven products below are not released yet; five are available now.
 
 ## Products
 
-- [Puuunch](https://wibeset.ca/#projects): A fast, beautiful timesheet for freelancers and small teams. Log time, review the week, and send it for approval, without the accounting-software feel. Web application. Not released yet.
+- [Puuunch](https://puuun.ch/): A fast, beautiful timesheet for freelancers and small teams. Log time, review the week, and send it for approval, without the accounting-software feel. Web application. Available now.
 - [Noue](https://wibeset.ca/#projects): A collaborative memory for small teams, built on one principle — one interaction, one note. A person is a name and a timeline. Made for small businesses, agencies and consultants who find HubSpot and Salesforce far too complex. Explicitly not a CRM. Web application. Not released yet.
 - [The Chirp League](https://wibeset.ca/#projects): Fantasy hockey pools with built-in trash talk — draft real NHL players, track live standings against live NHL data, and chirp your rivals in one place. Web application, with iOS and Android builds. Not released yet.
 - [Reliure](https://reliure.me): A quiet reading journal for iPhone — keep every book, know where you are, remember what moved you. iOS app. Available now.
@@ -38,4 +38,4 @@ Key facts:
 - [Founder](https://dominicmartineau.com): Dominic Martineau, founder and developer.
 - [Contact](mailto:hello@wibeset.ca): hello@wibeset.ca — questions in English or French.
 
-Last updated: 2026-10-01.
+Last updated: 2026-10-12.
