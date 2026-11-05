@@ -57,6 +57,21 @@ every book, know where you are, remember what moved you.
 
 [reliure.me →](https://reliure.me)
 
+### Porcom
+
+**A tiny journal for everything you watch.** Log movies and TV shows on iPhone,
+with posters, trailers, episodes, verdicts and stats. Free, no account, no ads.
+
+[porcom.app →](https://porcom.app)
+
+### Arpente
+
+**Every step tells a story.** A walking and hiking journal for iPhone: each walk
+kept with its map, its numbers and a few words about the day. Not a performance
+app.
+
+*Coming soon.* [arpente.app →](https://arpente.app)
+
 ### TopNHLPlayers.com
 
 **Ten seasons. Ten players each.** The top ten players of every NHL season for
