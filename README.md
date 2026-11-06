@@ -50,6 +50,12 @@ live standings, and chirp your rivals — all in one place.
 
 *Coming soon.*
 
+### Makearesu.me
+
+**Make a resume in 5 minutes.**
+
+*Coming soon.* [makearesu.me →](https://makearesu.me)
+
 ### Reliure
 
 **Your reading life, bound together.** A quiet reading journal for iPhone: keep

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Wibeset — Solutions web et mobiles, conçues au Saguenay</title>
-	<meta name="description" content="Wibeset est un petit studio du Saguenay, au Québec, qui développe des solutions web et mobiles : Puuunch, Noue, The Chirp League, Reliure, Porcom, Arpente, TopNHLPlayers.com, Luere et Luere Icon Studio.">
+	<meta name="description" content="Wibeset est un petit studio du Saguenay, au Québec, qui développe des solutions web et mobiles : Puuunch, Noue, The Chirp League, Makearesu.me, Reliure, Porcom, Arpente, TopNHLPlayers.com, Luere et Luere Icon Studio.">
 	<link href="../styles.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#08080b">
@@ -108,7 +108,7 @@
 				"isPartOf": { "@id": "https://wibeset.ca/#website" },
 				"about": { "@id": "https://wibeset.ca/#organization" },
 				"inLanguage": "fr-CA",
-				"dateModified": "2026-11-05"
+				"dateModified": "2026-11-06"
 			},
 			{
 				"@type": "WebApplication",
@@ -135,6 +135,16 @@
 				"name": "The Chirp League",
 				"description": "Des pools de hockey avec le chialage inclus : repêchez de vrais joueurs de la LNH, suivez le classement en direct et chialez contre vos rivaux. Pas encore sortie.",
 				"applicationCategory": "GameApplication",
+				"creator": { "@id": "https://wibeset.ca/#organization" },
+				"publisher": { "@id": "https://wibeset.ca/#organization" }
+			},
+			{
+				"@type": "WebApplication",
+				"@id": "https://wibeset.ca/#makearesu",
+				"name": "Makearesu.me",
+				"url": "https://makearesu.me",
+				"description": "Créez un CV en 5 minutes. Pas encore sortie.",
+				"applicationCategory": "BusinessApplication",
 				"creator": { "@id": "https://wibeset.ca/#organization" },
 				"publisher": { "@id": "https://wibeset.ca/#organization" }
 			},
@@ -226,9 +236,9 @@
 				Wibeset est un petit studio du Saguenay, au Québec, qui développe des solutions web et mobiles — sobres, rapides, respectueuses de la vie privée — et qui les lance lui-même.
 			</p>
 		</section>
-		<section id="projects">
+		<section id="web">
 			<header>
-				<h2>Projets.</h2>
+				<h2>Sur le web.</h2>
 			</header>
 			<table class="projects">
 				<tbody>
@@ -238,35 +248,57 @@
 					</tr>
 					<tr>
 						<td class="name">Noue</td>
-						<td>Une mémoire collective pour petites équipes. Pas un CRM <span class="soon">(bientôt)</span></td>
+						<td>Une mémoire collective pour petites équipes <span class="soon">(bientôt)</span></td>
 					</tr>
 					<tr>
 						<td class="name">The Chirp League</td>
 						<td>Des pools de hockey avec le chialage inclus <span class="soon">(bientôt)</span></td>
 					</tr>
 					<tr>
-						<td class="name"><a href="https://reliure.me" target="_blank" rel="noopener noreferrer">Reliure</a></td>
-						<td>Un carnet de lecture discret pour iPhone</td>
-					</tr>
-					<tr>
-						<td class="name"><a href="https://porcom.app" target="_blank" rel="noopener noreferrer">Porcom</a></td>
-						<td>Un petit journal pour tout ce que vous regardez, pour iPhone</td>
-					</tr>
-					<tr>
-						<td class="name"><a href="https://arpente.app" target="_blank" rel="noopener noreferrer">Arpente</a></td>
-						<td>Un journal de marche et de randonnée pour iPhone <span class="soon">(bientôt)</span></td>
+						<td class="name"><a href="https://makearesu.me" target="_blank" rel="noopener noreferrer">Makearesu.me</a></td>
+						<td>Créez un CV en 5 minutes <span class="soon">(bientôt)</span></td>
 					</tr>
 					<tr>
 						<td class="name"><a href="https://topnhlplayers.com" target="_blank" rel="noopener noreferrer">TopNHLPlayers.com</a></td>
 						<td>Les dix meilleurs joueurs de chaque saison de la LNH depuis dix ans</td>
 					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="mobile">
+			<header>
+				<h2>Applications mobiles.</h2>
+			</header>
+			<table class="projects">
+				<tbody>
+					<tr>
+						<td class="name"><a href="https://reliure.me" target="_blank" rel="noopener noreferrer">Reliure</a></td>
+						<td>Un carnet de lecture discret</td>
+					</tr>
+					<tr>
+						<td class="name"><a href="https://porcom.app" target="_blank" rel="noopener noreferrer">Porcom</a></td>
+						<td>Un petit journal pour tout ce que vous regardez</td>
+					</tr>
+					<tr>
+						<td class="name"><a href="https://arpente.app" target="_blank" rel="noopener noreferrer">Arpente</a></td>
+						<td>Un journal de marche et de randonnée <span class="soon">(bientôt)</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="desktop">
+			<header>
+				<h2>Applications de bureau.</h2>
+			</header>
+			<table class="projects">
+				<tbody>
 					<tr>
 						<td class="name"><a href="https://luere.app/fr/" target="_blank" rel="noopener noreferrer">Luere</a></td>
-						<td>Une application macOS gratuite pour compresser, convertir, recadrer et redimensionner vos images</td>
+						<td>Compressez, convertissez, recadrez et redimensionnez des images</td>
 					</tr>
 					<tr>
 						<td class="name"><a href="https://luere.app/fr/icon-studio/" target="_blank" rel="noopener noreferrer">Luere Icon Studio</a></td>
-						<td>Une application macOS gratuite qui génère toutes les tailles d'icônes et de favicons</td>
+						<td>Génère toutes les tailles d'icônes et de favicons à partir d'un logo</td>
 					</tr>
 				</tbody>
 			</table>
