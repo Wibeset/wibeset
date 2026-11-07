@@ -78,6 +78,14 @@ app.
 
 *Coming soon.* [arpente.app →](https://arpente.app)
 
+### Dernier Verre
+
+**One more, perfectly mixed.** A cocktail app for iPhone that turns what's
+already in your cabinet into tonight's drink: 52 recipes, exact measures, no
+account, no ads.
+
+*Coming soon.* [dernierverre.app →](https://dernierverre.app)
+
 ### TopNHLPlayers.com
 
 **Ten seasons. Ten players each.** The top ten players of every NHL season for

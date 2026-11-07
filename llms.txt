@@ -13,7 +13,7 @@ Key facts:
 - Working languages: English and French. The site exists in both (/ and /fr/).
 - Contact: hello@wibeset.ca
 - Focus: web and mobile applications, plus native macOS apps.
-- Four of the ten products below are not released yet; six are available now.
+- Five of the eleven products below are not released yet; six are available now.
 
 ## Products
 
@@ -24,6 +24,7 @@ Key facts:
 - [Reliure](https://reliure.me): A quiet reading journal for iPhone — keep every book, know where you are, remember what moved you. iOS app. Available now.
 - [Porcom](https://porcom.app): A tiny journal for everything you watch — log movies and TV shows, with posters, summaries, cast and trailers pulled from TMDB, episode tracking, verdicts, statistics, levels and widgets. Free, no account, no ads, no subscription. iPhone app, in English and French. Available now on the App Store.
 - [Arpente](https://arpente.app): A walking and hiking journal — not a performance app. Records GPS routes with map, distance, time and elevation, plus notes and photos, with GPX export. Free and fully personal, no account, no ads. iPhone app, in English and French. Not released yet.
+- [Dernier Verre](https://dernierverre.app): A free cocktail app that turns what's already in your cabinet into tonight's drink. 52 recipes (six alcohol-free) in a full-screen poster feed; tick the ingredients in your bar to see what's ready to serve or one ingredient away; filter by occasion, flavour, strength and difficulty; measures in ml or oz, scaled from one to twelve glasses. No account, no ads, works offline. iPhone app. Not released yet.
 - [TopNHLPlayers.com](https://topnhlplayers.com): The top ten players of every NHL season for the last ten years, ranked season by season. Website. Available now.
 - [Luere](https://luere.app): A free, native macOS app that shrinks, converts, crops and resizes images, with a live before/after compare slider. Supports JPEG, PNG, WebP, AVIF, HEIC, TIFF and GIF. Requires macOS 26 or later. Everything runs on the user's Mac — nothing is ever uploaded. Available now.
 - [Luere Icon Studio](https://luere.app/icon-studio/): A free, native macOS app that turns a single logo into every icon and favicon size for web, macOS, iOS, Android, Windows, Linux and Steam, including favicon.ico, PWA maskable icons, .icns, Xcode AppIcon.appiconset bundles, Android launcher icons, Steamworks icons, Tauri and Electron icon sets, browser-extension icons, Microsoft Store (MSIX) assets, Expo assets and social avatars. Requires macOS 14 or later. Runs entirely on the user's Mac. Available now.
