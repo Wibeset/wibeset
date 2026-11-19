@@ -86,6 +86,14 @@ account, no ads.
 
 *Coming soon.* [dernierverre.app →](https://dernierverre.app)
 
+### Coutume
+
+**Keep your habits, one day at a time.** A habit tracker for iPhone: good habits
+to build, bad ones to quit, one tap to log, and Apple Health fills in the rest.
+No account, no ads.
+
+*Coming soon.* [coutume.app →](https://coutume.app)
+
 ### TopNHLPlayers.com
 
 **Ten seasons. Ten players each.** The top ten players of every NHL season for
